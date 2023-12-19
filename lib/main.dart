@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_tutorial/get_x/bottom_sheet.dart';
 import 'package:getx_tutorial/get_x/dialog_default.dart';
+import 'package:getx_tutorial/get_x/route.dart';
 import 'package:getx_tutorial/get_x/snack_bar.dart';
 
 void main() {
@@ -16,16 +18,21 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'SnackBar',
       home: Scaffold(
-        appBar: AppBar(title: Text('SnackBar'),
+        appBar: AppBar(title:const Text('SnackBar'),
         ),
-        body: Center(
+        body:const Center(
+
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Text('This is Home Screen'),
               //Snack bar
               // MySnack()
-              MyDialog()
+              // MyDialog()
+              // MyBottomSheet()
+              MyRoute(),
+
             ],
           ),
         ),
